@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.order-summary{
+
+    
+    display: none;
+    max-width: 50%;
+     margin: 20px auto; 
+    padding: 50px;
+    background-color: aqua;
+    border: 2px solid rgb(23, 155, 155);
+    border-radius: 10px;
+}
+

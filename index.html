@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ordering System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+      
+    <div class="order-summary">
+      
+        <h3>Order Summary</h3>
+            <strong>We will send the following Pizza:<br/><br/></strong>  
+        <ul>
+                <li class="order"> <b> Toppings</b></li>
+                
+                <li class="size"></li>
+                <h3 style="
+                position: relative;
+                right: 39px;
+            ">To: </h3>
+                <li class="address"> </li> 
+            </ul>
+       </div>
+    
+ <div class="container mt-5">
+    <h1>Pizza Ordering System</h1>
+   
+   
+    <div class="accordion" id="accordionExample">
+
+      <form id="form1"> 
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link sec-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+               >
+                Pizza size
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show mb-3"  aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pizza-size" id="small" value="small" >
+                    <label class="form-check-label" for="small">
+                      Small
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pizza-size" id="medium" value="medium">
+                    <label class="form-check-label" for="medium">
+                      Medium
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pizza-size" id="large" value="large"  >
+                    <label class="form-check-label" for="large">
+                      Large
+                    </label>
+                  </div>
+
+                  <button class="btn btn-success float-right" id="next1" disabled>Next</button>
+              
+
+            </div>
+          </div>
+        </form>
+       </div>
+    
+
+        
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed sec-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+              Topping
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse mb-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              
+                <div class="form-check">
+                    <input class="form-check-input topping" type="checkbox" value="mashroom" id="mashroom">
+                    <label class="form-check-label" for="mashroom">
+                      Mashroom
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input topping" type="checkbox" value="cheese" id="cheese"  >
+                    <label class="form-check-label" for="cheese">
+                     Cheese
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input topping" type="checkbox" value="bacon" id="bacon"  >
+                    <label class="form-check-label" for="bacon">
+                        Bacon
+                    </label>
+                  </div>
+
+                  <button class="btn btn-success float-right" id="next2" disabled>Next</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed sec-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Information
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+               <h4>User Information</h4>
+
+               <!-- <form id="addtocart-form"> -->
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option value="ON">ON</option>
+                      <option value="BC">BC</option>
+                      <option value="SAS">SAS</option>
+                      <option value="NF">NF</option> 
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                     Confirm?
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="addtocart" disabled>Add to cart</button>
+              <!-- </form> -->
+
+          
+              
+            </div>
+          </div>
+        </div>
+      </div> <!-- conianer div -->
+      
+    
+  
+
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
